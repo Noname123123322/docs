@@ -20,10 +20,9 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Getting Started",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "acccreation"
             ]
           },
           {
