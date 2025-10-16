@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Core Host Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#8B5CF6",
+    "light": "#C084FC",
+    "dark": "#6B21A8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
