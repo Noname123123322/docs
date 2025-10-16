@@ -22,7 +22,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "acccreation"
+              "GettingStarted/acccreation"
             ]
           },
           {
@@ -104,15 +104,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
