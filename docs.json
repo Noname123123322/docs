@@ -22,8 +22,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "GettingStarted/AccountCreation",
-              "GettingStarted/HowToBuyAServer"
+              "GettingStarted/AccountCreation"
             ]
           },
           {
