@@ -2,12 +2,19 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Core Host Docs",
+  "favicon": "/favicon.svg",
+
   "colors": {
     "primary": "#8B5CF6",
     "light": "#C084FC",
     "dark": "#6B21A8"
   },
-  "favicon": "/favicon.svg",
+
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+
   "navigation": {
     "tabs": [
       {
@@ -22,79 +29,60 @@
           {
             "group": "Getting Started",
             "pages": [
-              "GettingStarted/AccountCreation",
-              "GettingStarted/HowToBuyAServer"
+              "getting-started/account-creation",
+              "getting-started/buying-a-server"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Server Management",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "server-management/panel-overview",
+              "server-management/console",
+              "server-management/file-manager",
+              "server-management/backups",
+              "server-management/schedules",
+              "server-management/startup-configuration",
+              "server-management/databases",
+              "server-management/allocations",
+              "server-management/users-and-permissions",
+              "server-management/addons"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Billing",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Community Guides",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "billing/overview",
+              "billing/renewals",
+              "billing/upgrades-and-downgrades",
+              "billing/invoices"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Troubleshooting",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "troubleshooting/server-not-starting",
+              "troubleshooting/cannot-join-server",
+              "troubleshooting/high-lag-or-tps",
+              "troubleshooting/plugin-or-mod-errors",
+              "troubleshooting/backup-restore-issues"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/contact"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
+
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://corehost.store/support"
       }
     ],
     "primary": {
@@ -103,23 +91,11 @@
       "href": "https://corehost.store"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
+
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/Noname123123322",
+      "x": "https://x.com/corehost"
     }
   }
 }
