@@ -11,8 +11,8 @@
   },
 
   "logo": {
-    "light": "/images/Light.svg",
-    "dark": "/images/Dark.svg"
+    "light": "/images/Dark.svg",
+    "dark": "/images/Light.svg"
   },
 
   "navigation": {
