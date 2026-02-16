@@ -1,3 +1,62 @@
 ---
-title: "Console"
+title: 'Console'
+description: 'Manage your server power state, view live logs, and execute commands.'
+icon: 'terminal'
 ---
+
+The **Console** (or Terminal) is the command center for your server. It allows you to monitor your server's activity in real-time, execute commands directly to the server instance, and manage power states.
+
+<img className="block dark:hidden" src="/images/console-light.png" alt="Server Console Interface" />
+<img className="hidden dark:block" src="/images/console-dark.png" alt="Server Console Interface" />
+
+## Power Controls
+
+Located at the top right of the terminal window, these buttons control the power state of your server.
+
+| Button | Action | Description |
+| :--- | :--- | :--- |
+| **Start** | `Boot` | Starts the server process. If the server is already running, this button is disabled. |
+| **Restart** | `Reboot` | Safely stops the server and immediately starts it again. Recommended for applying config changes. |
+| **Stop** | `Kill` | Stops the server process. Use the "Kill" option only if the server is unresponsive. |
+
+<Warning>
+  **Forcing a Stop:** Clicking the "Stop" button multiple times may force-kill the process. This can result in data corruption if plugins or worlds are not saved properly. Always try to let the server stop gracefully first.
+</Warning>
+
+## Terminal Output
+
+The large black area displays the live log output from your server console.
+
+* **Live Monitoring:** View startup logs, player chat, error messages, and plugin activity as they happen.
+* **History:** You can scroll up to view previous log entries since the panel was opened.
+
+<Tip>
+  **Auto Optimised Egg:** As seen in the banner, Core Hosting offers an auto-optimised egg. If you see performance warnings in your console, consider switching to our optimised egg to apply recommended tweaks automatically.
+</Tip>
+
+## Sending Commands
+
+Below the terminal output is the command input field.
+
+1.  Click into the text box that says **"Type a command..."**.
+2.  Type your command (e.g., `op <username>`, `gamemode creative`, `whitelist add`).
+3.  Press **Enter** to send it.
+
+<Note>
+  You do not need to type `/` before commands in the console (unlike in-game).
+</Note>
+
+## Server Statistics
+
+The sidebar on the right provides real-time resource usage data for your specific instance.
+
+* **Address:** Your server's connection IP and port (e.g., `sg.corehost.store:20094`).
+* **Uptime:** How long the server has been running since the last start.
+* **CPU Load:** Current CPU usage relative to your plan's limit.
+* **Memory:** RAM usage. If this hits your limit (e.g., 8 GiB), the server may crash (OOM Kill).
+* **Disk:** Storage space used by your server files.
+* **Network:** Real-time incoming and outgoing traffic.
+
+### Performance Graphs
+
+At the bottom of the page, you will find visual graphs for **CPU Load**, **Memory**, and **Network**. These are useful for identifying usage spikes or diagnosing lag during specific times.
