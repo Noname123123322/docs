@@ -12,7 +12,8 @@
 
   "logo": {
     "light": "/images/Dark.svg",
-    "dark": "/images/Light.svg"
+    "dark": "/images/Light.svg",
+    "href": "https://corehost.store"
   },
 
   "navigation": {
