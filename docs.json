@@ -98,5 +98,12 @@
       "github": "https://github.com/Noname123123322",
       "x": "https://x.com/corehost"
     }
+  },
+  "appearance": {
+    "strict": false,
+    "default": "system"
+  },
+  "fonts": {
+    "family": "Poppins"
   }
 }
