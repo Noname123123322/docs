@@ -72,16 +72,16 @@ Each log line follows a structured format:
 Here are the four log levels you'll encounter:
 
 <AccordionGroup>
-  <Accordion icon="circle-info" title="INFO — General Information">
+  <Accordion defaultOpen icon="circle-info" iconType="solid" title="INFO — General Information">
     Routine server activity. Players joining or leaving, world loading, plugin messages, and other standard events. No action needed.
   </Accordion>
-  <Accordion icon="triangle-exclamation" title="WARN — Warning">
+  <Accordion defaultOpen icon="triangle-exclamation" iconType="solid" title="WARN — Warning">
     A non-critical issue the server has flagged. It's still running, but something may need your attention — such as a misconfigured plugin or a deprecated setting.
   </Accordion>
-  <Accordion icon="circle-xmark" title="ERROR — Error">
+  <Accordion defaultOpen icon="circle-xmark" iconType="solid" title="ERROR — Error">
     Something went wrong. The server may continue running, but a feature or plugin may have failed. Read the message carefully and investigate the cause.
   </Accordion>
-  <Accordion icon="skull" title="FATAL — Critical Failure">
+  <Accordion defaultOpen icon="skull" iconType="solid" title="FATAL — Critical Failure">
     A severe error that typically causes the server to crash or shut down automatically. If you see this, check the full log and contact support if needed.
   </Accordion>
 </AccordionGroup>
@@ -176,25 +176,25 @@ On the right-hand side of the console, you'll find a set of live performance sta
 ### Stats Explained
 
 <AccordionGroup>
-  <Accordion title="Address">
+  <Accordion defaultOpen icon="address-book" iconType="solid" title="Address">
     Your server's connection address (e.g. `sg.corehost.store:20094`). Share this with your players so they can connect. The port is unique to your server.
   </Accordion>
-  <Accordion title="Uptime">
+  <Accordion defaultOpen icon="up" iconType="solid" title="Uptime">
     How long your server has been running since it was last started. For example, `2d 3h 30m` means the server has been online for 2 days, 3 hours, and 30 minutes. A low uptime may indicate a recent restart or crash.
   </Accordion>
-  <Accordion title="CPU Load">
+  <Accordion defaultOpen icon="microchip" iconType="solid" title="CPU Load">
     Shows your server's current CPU usage as a percentage of the total available CPU allocated to your plan (e.g. `8.05% / 200%`). If this is consistently near or above 100%, your server may be under heavy load — consider optimising plugins or upgrading your plan.
   </Accordion>
-  <Accordion title="Memory (RAM)">
+  <Accordion defaultOpen icon="memory" iconType="solid" title="Memory (RAM)">
     Displays how much RAM your server is currently using vs. the total allocated (e.g. `5.7 GiB / 14 GiB`). If usage is consistently near the limit, you may experience lag or crashes. Consider increasing your plan or reducing memory-intensive plugins.
   </Accordion>
-  <Accordion title="Disk">
+  <Accordion defaultOpen icon="floppy-disk" iconType="solid" title="Disk">
     Shows your total disk usage (e.g. `19.92 GiB / 39.06 GiB`). This includes your world files, plugins, backups, and logs. Monitor this regularly — running out of disk space can cause your server to stop saving chunks or crash.
   </Accordion>
-  <Accordion title="Network (Inbound / Outbound)">
+  <Accordion defaultOpen icon="network-wired" iconType="solid" title="Network (Inbound / Outbound)">
     Tracks total data transferred to and from your server since last startup. High outbound traffic is normal for busy servers with many connected players. Unusually high values may indicate bots or a DDoS attempt.
   </Accordion>
-  <Accordion title="Players Online">
+  <Accordion defaultOpen icon="user" iconType="solid" title="Players Online">
     Shows the number of currently connected players. If this shows **Not Available**, your server may be starting up, offline, or the query port may not be configured.
   </Accordion>
 </AccordionGroup>
@@ -226,7 +226,7 @@ At the bottom of the console page, three live graphs give you a visual history o
 ## Quick Reference
 
 <CardGroup cols={2}>
-  <Card icon="circle-play" iconType="solid" title="Start the server">
+  <Card icon="play" iconType="solid" title="Start the server">
     Click the **green** play button at the top right of the console.
   </Card>
   <Card icon="rotate" iconType="solid" title="Restart the server">
@@ -254,19 +254,19 @@ At the bottom of the console page, three live graphs give you a visual history o
 ## Frequently Asked Questions
 
 <AccordionGroup>
-  <Accordion title="Why is my console not showing any output?">
+  <Accordion defaultOpen title="Why is my console not showing any output?">
     If the console appears blank or frozen, try refreshing the page. If the server is offline, no logs will appear until it's started. Check the power buttons to confirm the server status.
   </Accordion>
-  <Accordion title="My CPU usage is at 100% — what should I do?">
+  <Accordion defaultOpen title="My CPU usage is at 100% — what should I do?">
     High CPU is often caused by too many plugins, a large number of players, or a runaway process. Try restarting the server, removing resource-heavy plugins, or reducing view distance in your server config. If it persists, consider upgrading your plan.
   </Accordion>
-  <Accordion title="My server says 'Players Online: Not Available' — why?">
+  <Accordion defaultOpen title="My server says 'Players Online: Not Available' — why?">
     This usually means the server is still starting up, or the query port isn't configured. Wait a minute after startup and refresh the page. If it still shows unavailable, check if the configured IP is correct in the More\>Players section.
   </Accordion>
-  <Accordion title="Can I run commands while the server is offline?">
+  <Accordion defaultOpen title="Can I run commands while the server is offline?">
     No — commands require an active server process to execute. Start your server first, then send commands once it's fully booted.
   </Accordion>
-  <Accordion title="How do I find my server's IP address to share with friends?">
+  <Accordion defaultOpen title="How do I find my server's IP address to share with friends?">
     Your connection address is shown in the **Address** field on the right-hand stats panel (e.g. `sg.corehost.store:20094`). Share this with your players exactly as shown.
   </Accordion>
 </AccordionGroup>
